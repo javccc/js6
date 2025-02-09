@@ -15,7 +15,7 @@ for (let i = 0; i < Infinity; i++) {
     } else if (parts[0] == 'del') {
         for (let index = 0; index < list.length; index++) {
           
-            list[index] == command[1] ? list.splice(index, 1) : '';
+            list[index] == parts[1] ? list.splice(index, 1) : '';
         }
     } else if (parts[0] == 'stop') {
         break;
